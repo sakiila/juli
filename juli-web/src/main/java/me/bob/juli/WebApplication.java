@@ -1,4 +1,4 @@
-package juli;
+package me.bob.juli;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
@@ -10,10 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @Slf4j
-public class MainApplication {
+public class WebApplication {
     
     public static void main(String[] args) {
-        SpringApplication.run(MainApplication.class, args);
-        log.info("MainApplication running");
+        SpringApplication.run(WebApplication.class, args);
+        log.info("WebApplication running");
     }
 }

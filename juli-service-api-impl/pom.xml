@@ -11,5 +11,24 @@
 
     <artifactId>juli-service-api-impl</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>me.bob</groupId>
+            <artifactId>juli-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>me.bob</groupId>
+            <artifactId>juli-service-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>me.bob</groupId>
+            <artifactId>juli-support</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
