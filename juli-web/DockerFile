@@ -1,0 +1,8 @@
+# 基础镜像
+FROM openjdk:8
+# 复制jar包到远程服务器
+ADD /target/juli-web-0.0.1-SNAPSHOT.jar /root/project/juli/juli-web.jar
+# 开放端口
+EXPOSE 8080
+# 容器启动后执行的命令
+ENTRYPOINT ["java", "-jar", "/root/project/juli/juli-web.jar"]
