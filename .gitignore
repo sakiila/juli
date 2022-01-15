@@ -163,3 +163,5 @@ Temporary Items
 .apdisk
 
 # End of https://www.toptal.com/developers/gitignore/api/java,jetbrains,macos
+
+/juli-web/target/

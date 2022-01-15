@@ -22,7 +22,7 @@ public class MessageController {
     private String topic = "juli-message";
     
     @GetMapping("/message/send")
-    public void send(@RequestParam String message) {
+    public void messageSend(@RequestParam String message) {
         kafkaTemplate.send(topic, message);
     }
 }
