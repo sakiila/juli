@@ -39,3 +39,11 @@ management:
     export:
       prometheus:
         enabled: true
+
+app:
+  id: 
+apollo:
+  config-service: 
+  bootstrap:
+    enabled: true
+    namespaces: 
