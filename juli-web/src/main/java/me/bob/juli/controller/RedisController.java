@@ -21,12 +21,15 @@ public class RedisController {
 
     @GetMapping("/redis/get/{key}")
     public String redisGet(@PathVariable(name = "key") String key) {
-        return redisTemplate.opsForValue().get(key);
+        final String value = redisTemplate.opsForValue().get(key);
+        log.info("redisGet, key: {}, value: {}", key, value);
+        return value;
     }
 
     @GetMapping("/redis/set/{key}")
     public String redisSet(@PathVariable(name = "key") String key) {
-         redisTemplate.opsForValue().set(key, "hello " + key);
+        redisTemplate.opsForValue().set(key, "hello " + key);
+        log.info("redisSet, key: {}", key);
          return "success";
     }
 }
